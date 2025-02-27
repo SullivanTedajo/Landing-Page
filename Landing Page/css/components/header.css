@@ -1,0 +1,64 @@
+/* --- ******  HEADER CSS  ****** --- */
+@import url(../global.css);
+
+.header{
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.header__brand{
+
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    border: .2em solid var(--color-red);
+}
+.header__items{
+    display: flex;
+    gap: 1.6em;
+}
+.header__item{
+    list-style-type: none;
+}
+.header__item:first-child > .header__link{
+    color: var(--color-red);
+}
+.header__link{
+    text-decoration: none;
+    font-size: 1.8em;
+    text-transform: capitalize;
+    color: var(--color-white);
+    
+    &:hover{
+        color: var(--color-red);
+    }
+}
+
+.header__button-container{
+    padding-block-start: 1em;
+}
+.header__button{
+    text-decoration: none;
+    font-size: 1.9em;
+    font-weight: bold;
+    color: var(--color-white);
+    background-color: var(--color-red);
+    padding: .5em;
+    border-radius: .5em;
+    vertical-align: middle;
+    &:hover{
+        color: var(--color-red);
+        background-color: var(--color-white);
+    }
+}
+
+@media only  screen and (max-width: 50em) {
+
+    .header__items , .header__item{
+        display: block;
+        /* gap: 1em; */
+    }
+
+}
+
+
